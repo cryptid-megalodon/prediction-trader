@@ -1,9 +1,12 @@
 
-# iPython notebook working directories
+# iPython notebook working directories and files
 /ipynb_checkpoints/
 /prediction_env/
+/__pycache__/
+*.ipynb_checkpoints
 
 # Snapshots of Polymarket Data
 /snapshots/
+/api_cache/
 
 .env
