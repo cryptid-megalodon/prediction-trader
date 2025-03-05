@@ -1,0 +1,9 @@
+
+# iPython notebook working directories
+/ipynb_checkpoints/
+/prediction_env/
+
+# Snapshots of Polymarket Data
+/snapshots/
+
+.env
