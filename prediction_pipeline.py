@@ -122,8 +122,8 @@ def create_market_prediction(report, market_description):
   }
 
   prediction_model = genai.GenerativeModel(
-    # model_name="gemini-2.0-flash-thinking-exp-01-21",
-    model_name="gemini-2.0-flash",
+    model_name="gemini-2.0-flash-thinking-exp-01-21",
+    # model_name="gemini-2.0-flash",
     generation_config=analysis_generation_config,
     system_instruction=prompts.prediction_system_prompt,
   )
