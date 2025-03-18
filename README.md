@@ -47,12 +47,39 @@ president would sign an executive order on a specific date [Will Trump issue an 
 (https://polymarket.com/event/will-trump-issue-an-executive-order-on-february-4/will-trump-issue-an-executive-
 order-on-february-4). A White House press release contained a date typo that triggered a dispute with news 
 sources disagreeing with the WH press release. The market ultimately resolved in favor of the news outlet 
-reported dates, which likely biased:
+reported dates, which likely biased the perplexity report. It was a win for the trader but I have low
+confidence in its ability to regularly pull off an accurate prediction in this environment. I also was only
+able to do this on two markets so my sample size is small.
+
+I found multiple markets that were very far from the LLM's prediction. One was a market based on the outcome
+of a reality TV show ([Who will win the Beast Games](https://polymarket.com/event/who-will-win-the-beast-games?
+tid=1742327690961)). The market heavily favored one player winning the market. The LLM was determined to
+trade against this outcome because reality TV shows are "notoriously hard to predict". This market comment
+section contains numerous posts accusing people of insider trading the market. The show was filmed with
+a crew of over 1500 people and finished filming over a month before the market was opened, so there were
+many people with insider information of the outcome. Looking through the markets, many have at least a few
+insiders who could trade on the unregulated marketplace. These are huge pitfalls to algorithmic trading which
+would require guardrails.
+
+There were ~2500 total open markets at the time of this writing. Most markets resolve in less than a year.
+~225 markets resolve in the next 7 days, but the majority of these markets are ones that are automatically 
+created around sport or weather events. Maximizing ROI would involve prioritizing markets in the near term over
+long term markets. There are 20-40 non-automatically created markets that resolve in any given 7 day time
+period as of the time of this writing, but with Polymarket rapidly adding new markets.
+
+Overall, I think it would be very difficult in most market types to use a simple LLM to trade and impossible
+for an LLM to outperform some market types with time-tested, specialized models. I think the LLM did
+demonstrate solid probabilistic reasoning when prompted with superforecasting principles however the quality
+of the prediction heavily depended on the quality of the report given to the LLM. Novel markets with
+little-to-no pre-existing trading or forecasting automation could potentially be an opportunity for LLMs.
+However, models fitting this description seem to be relatively few.
+
+The main hurdles I could find were:
  * 1) Avoiding ambiguous and contested markets
  * 2) Avoiding insider trading
  * 3) Avoiding markets with mature competition
  * 4) Aggregating all relevant context for the market into a report the LLM could consume.
-
+ 
 The best use case for LLMs would probably be in automatically triaging new markets and flagging potential 
 opportunities to an experienced trader who could take over collecting information and potentially working with 
 the LLM to make a prediction from there.
