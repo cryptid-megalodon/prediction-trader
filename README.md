@@ -22,12 +22,12 @@ the user in making manual trades on the marketplace.
 This was a very fun project. It's interesting to see the model's reasoning for the market prediction and the 
 APIs and prices for model intelligence have gotten cheap enough and fast enough to make this a viable project. 
 My initial personal analysis of the markets was that there may be some opportunity to automatically trade some 
-types of markets. Polymarket has recently expanded their political market offerings (e.g. bets on votes from 
-individual senators: [Will Bernie Sanders vote to confirm Tulsi Gabbard](https://polymarket.com/event/which-senators-will-vote-to-confirm-tulsi-gabbard))
+types of markets. Polymarket has recently expanded their political market offerings (e.g. [Will Bernie Sanders vote to confirm Tulsi Gabbard](https://polymarket.com/event/which-senators-will-vote-to-confirm-tulsi-gabbard))
 and even includes markets for trading on conspiracy theories (e.g. [Was the JFK assassination an inside job](https://polymarket.com/event/was-jfk-assassination-an-inside-job-march-31?tid=1742326836894)
 which was trading as high as 8% odds for Yes). The LLMs seem to have grounded opinions on these markets.
-These markets are also more diverse and nuanced in their events and criteria compared to other types of
-traditional betting markets.
+These markets are also more diverse and nuanced in their events and outcome criteria compared to other types of
+traditional betting markets. These one-off or specialized markets are more difficult to predict with specialized
+models and data collection and more amenable to a generalist approach based on LLM reasoning.
 
 The more traditional betting markets include things like sports betting and bets on economic outcomes like 
 interest rates and stock market movement. Another type of bet are weather forecasts. All of these market types 
