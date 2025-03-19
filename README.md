@@ -23,11 +23,11 @@ This was a very fun project. It's interesting to see the model's reasoning for t
 APIs and prices for model intelligence have gotten cheap enough and fast enough to make this a viable project. 
 My initial personal analysis of the markets was that there may be some opportunity to automatically trade some 
 types of markets. Polymarket has recently expanded their political market offerings (e.g. bets on votes from 
-individual senators: [Will Bernie Sanders vote to confirm Tulsi Gabbard](https://polymarket.com/event/which-
-senators-will-vote-to-confirm-tulsi-gabbard)) and even includes markets for trading on conspiracy theories 
-(e.g. [Was the JFK assassination an inside job](https://polymarket.com/event/was-jfk-assassination-an-inside-job-
-march-31?tid=1742326836894)). The LLMs seem to have grounded opinions on these markets. These markets are also 
-more diverse and nuanced in their events and criteria compared to other types of traditional betting markets.
+individual senators: [Will Bernie Sanders vote to confirm Tulsi Gabbard](https://polymarket.com/event/which-senators-will-vote-to-confirm-tulsi-gabbard))
+and even includes markets for trading on conspiracy theories (e.g. [Was the JFK assassination an inside job](https://polymarket.com/event/was-jfk-assassination-an-inside-job-march-31?tid=1742326836894)
+which was trading as high as 8% odds for Yes). The LLMs seem to have grounded opinions on these markets.
+These markets are also more diverse and nuanced in their events and criteria compared to other types of
+traditional betting markets.
 
 The more traditional betting markets include things like sports betting and bets on economic outcomes like 
 interest rates and stock market movement. Another type of bet are weather forecasts. All of these market types 
@@ -43,17 +43,16 @@ volatile prices and the near-term resolution combine for great annualized ROI if
 them. Organized groups seem to brigade the comment section and pump-and-dump trades during these periods of 
 uncertainty. I attempted to manually trade these markets, it seemed like the reasoning LLM had good intuition 
 but it's no small task finding and monitoring these markets. One example was a market betting on whether the US 
-president would sign an executive order on a specific date [Will Trump issue an executive order on February 4?]
-(https://polymarket.com/event/will-trump-issue-an-executive-order-on-february-4/will-trump-issue-an-executive-
-order-on-february-4). A White House press release contained a date typo that triggered a dispute with news 
+president would sign an executive order on a specific date [Will Trump issue an executive order on February 4?](https://polymarket.com/event/will-trump-issue-an-executive-order-on-february-4/will-trump-issue-an-executive-order-on-february-4).
+A White House press release contained a date typo that triggered a dispute with news 
 sources disagreeing with the WH press release. The market ultimately resolved in favor of the news outlet 
 reported dates, which likely biased the perplexity report. It was a win for the trader but I have low
 confidence in its ability to regularly pull off an accurate prediction in this environment. I also was only
 able to do this on two markets so my sample size is small.
 
 I found multiple markets that were very far from the LLM's prediction. One was a market based on the outcome
-of a reality TV show ([Who will win the Beast Games](https://polymarket.com/event/who-will-win-the-beast-games?
-tid=1742327690961)). The market heavily favored one player winning the market. The LLM was determined to
+of a reality TV show ([Who will win the Beast Games](https://polymarket.com/event/who-will-win-the-beast-games?tid=1742327690961)).
+The market heavily favored one player winning the market. The LLM was determined to
 trade against this outcome because reality TV shows are "notoriously hard to predict". This market comment
 section contains numerous posts accusing people of insider trading the market. The show was filmed with
 a crew of over 1500 people and finished filming over a month before the market was opened, so there were
