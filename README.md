@@ -43,7 +43,7 @@ volatile prices and the near-term resolution combine for great annualized ROI if
 them. Organized groups seem to brigade the comment section and pump-and-dump trades during these periods of 
 uncertainty. I attempted to manually trade these markets, it seemed like the reasoning LLM had good intuition 
 but it's no small task finding and monitoring these markets. One example was a market betting on whether the US 
-president would sign an executive order on a specific date [Will Trump issue an executive order on February 4?](https://polymarket.com/event/will-trump-issue-an-executive-order-on-february-4/will-trump-issue-an-executive-order-on-february-4).
+president would sign an executive order on a specific date (e.g. [Will Trump issue an executive order on February 4?](https://polymarket.com/event/will-trump-issue-an-executive-order-on-february-4/will-trump-issue-an-executive-order-on-february-4)).
 A White House press release contained a date typo that triggered a dispute with news 
 sources disagreeing with the WH press release. The market ultimately resolved in favor of the news outlet 
 reported dates, which likely biased the perplexity report. It was a win for the trader but I have low
@@ -51,7 +51,7 @@ confidence in its ability to regularly pull off an accurate prediction in this e
 able to do this on two markets so my sample size is small.
 
 I found multiple markets that were very far from the LLM's prediction. One was a market based on the outcome
-of a reality TV show ([Who will win the Beast Games](https://polymarket.com/event/who-will-win-the-beast-games?tid=1742327690961)).
+of a reality TV show (i.e. [Who will win the Beast Games?](https://polymarket.com/event/who-will-win-the-beast-games?tid=1742327690961)).
 The market heavily favored one player winning the market. The LLM was determined to
 trade against this outcome because reality TV shows are "notoriously hard to predict". This market comment
 section contains numerous posts accusing people of insider trading the market. The show was filmed with
@@ -74,10 +74,10 @@ little-to-no pre-existing trading or forecasting automation could potentially be
 However, models fitting this description seem to be relatively few.
 
 The main hurdles I could find were:
- * 1) Avoiding ambiguous and contested markets
- * 2) Avoiding insider trading
- * 3) Avoiding markets with mature competition
- * 4) Aggregating all relevant context for the market into a report the LLM could consume.
+ 1) Avoiding ambiguous and contested markets
+ 2) Avoiding insider trading
+ 3) Avoiding markets with mature competition
+ 4) Aggregating all relevant context for the market into a report the LLM could consume.
  
 The best use case for LLMs would probably be in automatically triaging new markets and flagging potential 
 opportunities to an experienced trader who could take over collecting information and potentially working with 
@@ -91,8 +91,8 @@ GEMINI_API_KEY=""
 PERPLEXITY_API_KEY=""
 
 Launch a Jupyter notebook server and run the notebook markets.ipynb.
-```
-$ python -m jupyter notebook markets.ipynb 
+```bash
+python -m jupyter notebook markets.ipynb 
 ```
 
 Run all cells (Note: the first run on each day will take significantly longer than subsequent runs. 
