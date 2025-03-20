@@ -24,6 +24,24 @@ This is done inside a single python notebook (markets.ipynb) that pretty prints
 a user report that can guide the user in making manual trades on the
 marketplace.
 
+## How To Run
+You will need API keys for the Polymarket CLOB API, the Perplexity API and
+Google Gemini API. Add these keys to a .env file in the root directory with the
+following format: PK="" GEMINI_API_KEY="" PERPLEXITY_API_KEY=""
+
+Launch a Jupyter notebook server and run the notebook markets.ipynb.
+```bash
+python -m jupyter notebook markets.ipynb 
+```
+
+Run all cells (Note: the first run on each day will take significantly longer
+than subsequent runs. Marketplaces, reports, predictions are all pickled and
+cached to disk to speed up subsequent runs during early development. You can
+override this behavior by setting the cache variable to None anywhere in the
+pipeline you want fresh data.)
+
+Have fun trading on the market report!
+
 ## Results
 
 ### Personal Thoughts
@@ -132,21 +150,3 @@ The best use case for LLMs would probably be in automatically triaging new
 markets and flagging potential opportunities to an experienced trader who could
 take over collecting information and potentially working with the LLM to make a
 prediction from there.
-
-## How To Run
-You will need API keys for the Polymarket CLOB API, the Perplexity API and
-Google Gemini API. Add these keys to a .env file in the root directory with the
-following format: PK="" GEMINI_API_KEY="" PERPLEXITY_API_KEY=""
-
-Launch a Jupyter notebook server and run the notebook markets.ipynb.
-```bash
-python -m jupyter notebook markets.ipynb 
-```
-
-Run all cells (Note: the first run on each day will take significantly longer
-than subsequent runs. Marketplaces, reports, predictions are all pickled and
-cached to disk to speed up subsequent runs during early development. You can
-override this behavior by setting the cache variable to None anywhere in the
-pipeline you want fresh data.)
-
-Have fun trading on the market report!
