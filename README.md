@@ -1,4 +1,4 @@
-# prediction-trader
+# Polymarket Prediction Trader
 A prototype of an LLM pipeline for assessing prediction markets.
 
 ## Introduction
